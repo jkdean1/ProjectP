@@ -8,7 +8,10 @@ var mouseY;
 
 var down = false;
 
-var particleCount = 1000;
+var particleCount = 2000;
+var maxParticle = 4; //to make one size changeto zero and just use min size
+var minParticle = 1;
+var maxParticleSize;
 var particles = [];
 
 var qt;
@@ -31,7 +34,14 @@ var setup = function () {
     context.fillRect(0, 0, width, height);
 
     for (var i = 0; i < particleCount; i++) {
-        particles[i] = new Particle(Math.random() * width, Math.random() * height);
+        var size = Math.random() * maxParticle + minParticle;
+        particles[i] = new Particle(Math.random() * width, Math.random() * height, size);
+    }
+
+    if (maxParticle == 0) {
+        maxParticleSize = minParticle;
+    } else {
+        maxParticleSize = minParticle + maxParticle;
     }
 
     run();
@@ -92,7 +102,7 @@ var draw = function () {
 
     for (let p of particles) {
         p.highlight = false;
-        var range = new Circle(p.x, p.y, p.r * 2);
+        var range = new Circle(p.x, p.y, maxParticleSize * 2);
 
         if (enableQuadTree) {
             var points = qt.query(range);
