@@ -1,4 +1,4 @@
-#### This is an informational document about all the test projects used for this project. 
+### This is an informational document about all the test projects contained in this folder
 
 ### List of test projects:
 
