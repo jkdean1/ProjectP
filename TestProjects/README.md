@@ -17,7 +17,7 @@ These projects are only partially functional, but are hopefully somewhat helpful
 
 
 
-###qq Quadtree_Static_Particles
+### Quadtree_Static_Particles
 
 This project was used to understand and create the Quadtree Algorithm. It has randomly generated static "points" throughout the canvas. A box will follow the mouse around and the quadtree is used to pull the points that are in the boxed region. They will be marked in blue. 
 
