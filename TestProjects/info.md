@@ -1,6 +1,6 @@
 # Test Project Info Document
 
-This is an informational document about all the test projects contained in this folder
+This is an informational document about all the test projects contained in this folder. These were used as stepping stones twards a final larger project and should not be thought of as "finished projects" in any way. Feel free to look around or use anything you find. If I used things from somewhere else the links to the respective owners are found here.
 
 ## List of test projects:
 
@@ -10,7 +10,6 @@ This is an informational document about all the test projects contained in this 
 These projects are only partially functional, but are hopefully somewhat helpful to understand the algorithms used in the game that 
 
 ## Project Descriptions
----
 
 
 ### Quadtree_Static_Particles
@@ -21,13 +20,12 @@ This project was created with the help of The Coding Train, his youtube channel 
 
 ### Quadtree_Dynamic_Particles
 
-This project used the prevous one with improvments and stress testing. The quadtree algoritm is used to determine collision detection between many circles all moving in random directions. As a part of the project you can enable and disable the quadtree to view performance differences. In code you can change the amound of particles, the particle sizes, and also give the particles a random size. This project uses the larges possible particle for the check region. There should be a better way to do this but that is what I came up with. You can also enable or disable the rendering of the quadtree itself.
+This project used the prevous one with improvments and stress testing. The quadtree algoritm is used to determine collision detection between many circles all moving in random directions. As a part of the project you can enable and disable the quadtree to view performance differences. In code you can change the amound of particles, the particle sizes, and also give the particles a random size. This project uses the largest possible particle for the check region. There should be a better way to do this but that is what I came up with. You can also enable or disable the rendering of the quadtree itself.
 
-    * var particleCount = 2000;
-    * var maxParticle = 4; //to make all circles the same change to zero and use minParticle only
-    * var minParticle = 1;
-    * var enableQuadTree = true;
-    * var showQuadTree = true;
+This project was created with the help of The Coding Train, his youtube channel can be found [HERE](https://www.youtube.com/user/shiffman). 
+
+This project also used a library for the FPS meter. I found this online and it looks really cool. You can find it [HERE](http://darsa.in/fpsmeter/).
+
     
     
 
