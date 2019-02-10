@@ -22,6 +22,8 @@ This project was used to understand and create the Quadtree Algorithm. It has ra
 
 This project was created with the help of The Coding Train, his youtube channel can be found [HERE](https://www.youtube.com/user/shiffman). 
 
+![Screen Shot 1](images/ScreenShot1.png)
+
 ### Quadtree_Moving_Particles
 
 This project used the prevous one with improvments and stress testing. The quadtree algoritm is used to determine collision detection between many circles all moving in random directions. As a part of the project you can enable and disable the quadtree to view performance differences. In code you can change the amound of particles, the particle sizes, and also give the particles a random size. This project uses the largest possible particle for the check region. There should be a better way to do this but that is what I came up with. You can also enable or disable the rendering of the quadtree itself.
@@ -29,6 +31,8 @@ This project used the prevous one with improvments and stress testing. The quadt
 This project was created with the help of The Coding Train, his youtube channel can be found [HERE](https://www.youtube.com/user/shiffman). 
 
 This project also used a library for the FPS meter. I found this online and it looks really cool. You can find it [HERE](http://darsa.in/fpsmeter/).
+
+![Screen Shot 1](images/ScreenShot2.png)
 
     
     
