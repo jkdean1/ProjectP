@@ -1,4 +1,4 @@
-# Test Project Info Document
+# Test Projects
 
 This is an informational document about all the test projects contained in this folder. These were used as stepping stones towards a final larger project and should not be thought of as "finished" in any way. Feel free to look around or use anything you find. If I used things from somewhere else the links to the respective owners are found below.
 
