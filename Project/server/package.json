@@ -1,0 +1,23 @@
+{
+  "name": "projectp",
+  "version": "0.0.0",
+  "description": "MMO web based game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobcoxndsu/ProjectP.git"
+  },
+  "author": "Jacob Cox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobcoxndsu/ProjectP/issues"
+  },
+  "homepage": "https://github.com/jacobcoxndsu/ProjectP#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  }
+}

@@ -16,7 +16,7 @@ These projects are only partially functional, but are hopefully somewhat helpful
 
 
 
-### Quadtree_Static_Particles
+###qq Quadtree_Static_Particles
 
 This project was used to understand and create the Quadtree Algorithm. It has randomly generated static "points" throughout the canvas. A box will follow the mouse around and the quadtree is used to pull the points that are in the boxed region. They will be marked in blue. 
 
@@ -30,7 +30,7 @@ This project used the prevous one with improvments and stress testing. The quadt
 
 This project was created with the help of The Coding Train, his youtube channel can be found [HERE](https://www.youtube.com/user/shiffman). 
 
-This project also used a library for the FPS meter. I found this online and it looks really cool. You can find it [HERE](http://darsa.in/fpsmeter/). Currently there is not a licence for this entire project as a whole however because I am using the FPSMeter project the folder "Quadtree_Moving_Particles" and everything contained in it does fall under the same license as FPSMeter. Further information can be found [HERE](http://darsa.in/fpsmeter/).
+This project also used a library for the FPS meter. I found this online and it looks really cool. You can find it [HERE](http://darsa.in/fpsmeter/).
 
 ![Screen Shot 1](images/ScreenShot2.png)
 

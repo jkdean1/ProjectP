@@ -8,9 +8,9 @@ var mouseY;
 
 var down = false;
 
-var particleCount = 2000;
-var maxParticle = 4; //to make one size changeto zero and just use min size
-var minParticle = 1;
+var particleCount = 1000;
+var maxParticle = 0; //to make one size changeto zero and just use min size
+var minParticle = 4;
 var maxParticleSize;
 var particles = [];
 
@@ -87,7 +87,7 @@ var run = function () {
 
 var draw = function () {
     var boundary = new Rectangle(width / 2, height / 2, width / 2, height / 2);
-    qt = new QuadTree(boundary, 4);
+    qt = new QuadTree(boundary, 15);
 
     //draw the black background
     context.fillStyle = "black";
