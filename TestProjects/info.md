@@ -22,7 +22,14 @@ This project was created with the help of The Coding Train, his youtube channel 
 ### Quadtree_Dynamic_Particles
 
 This project used the prevous one with improvments and stress testing. The quadtree algoritm is used to determine collision detection between many circles all moving in random directions. As a part of the project you can enable and disable the quadtree to view performance differences. In code you can change the amound of particles, the particle sizes, and also give the particles a random size. This project uses the larges possible particle for the check region. There should be a better way to do this but that is what I came up with. You can also enable or disable the rendering of the quadtree itself.
-    * 
+
+    * var particleCount = 2000;
+    * var maxParticle = 4; //to make all circles the same change to zero and use minParticle only
+    * var minParticle = 1;
+    * var enableQuadTree = true;
+    * var showQuadTree = true;
+    
+    
 
 
 
