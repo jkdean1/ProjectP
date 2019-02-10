@@ -22,7 +22,7 @@ This project was used to understand and create the Quadtree Algorithm. It has ra
 
 This project was created with the help of The Coding Train, his youtube channel can be found [HERE](https://www.youtube.com/user/shiffman). 
 
-
+![Screen Shot 1](images/ScreenShot1.png)
 
 ### Quadtree_Moving_Particles
 
