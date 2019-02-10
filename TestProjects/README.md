@@ -11,7 +11,7 @@ This is an informational document about all the test projects contained in this 
 
 These projects are only partially functional, but are hopefully somewhat helpful to understand the algorithms used in the game that is associated with this project.
 
-## Project Descriptions
+### Project Descriptions
 
 
 
