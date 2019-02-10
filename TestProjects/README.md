@@ -8,6 +8,7 @@ This is an informational document about all the test projects contained in this 
 
 * Quadtree_Static_Particles
 * Quadtree_Moving_Particles
+* Shape_Design_Triangles
 
 These projects are only partially functional, but are hopefully somewhat helpful to understand the algorithms used in the game that is associated with this project.
 
@@ -33,6 +34,14 @@ This project was created with the help of The Coding Train, his youtube channel 
 This project also used a library for the FPS meter. I found this online and it looks really cool. You can find it [HERE](http://darsa.in/fpsmeter/).
 
 ![Screen Shot 1](images/ScreenShot2.png)
+
+### Shape_Design_Triangles
+
+This project is not in any way done "correctly" however it was just a test case to work out the visuals for drawing and creating circle like shapes out of triangles using the line rendering tools that come with javascript canvas. You can change the amount of triangles that get displayed and mess with the colors. I chose a blue green mixture because it looked the most visually appealing. This is an idea that will hopefully lead to the design of the game character, or bacteriophages. If you want to know more about bacteriophages you can click [HERE](https://en.wikipedia.org/wiki/Bacteriophage). They have this triangle like visual on top when rendered in drawings. Lastly here are some pictures of the outcome. 
+
+![Screen Shot 1](images/ScreenShot3.png)
+
+![Screen Shot 1](images/ScreenShot4.png)
 
     
     
