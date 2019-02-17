@@ -1,15 +1,24 @@
+//Import Required Libraries
 var Log = require('./js/log.js');
 var Util = require('./js/util.js');
 var express = require('express');
+var fs = require('fs');
 
+//Load Config Data
+let rawdata = fs.readFileSync('./config.json');
+let c = JSON.parse(rawdata);
+
+//Create Server Variables
 var app = express();
 var serv = require('http').Server(app);
-var gameport = 3000;
+var gameport = c.port;
 
+//Default location for the client
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/client/index.html');
 });
-//If the server specifies something specific but it has to be in the client folder.
+
+//If the client specifies something specific, it has to be in the client folder.
 app.use('/client', express.static(__dirname + '/client'));
 
 serv.listen(gameport);

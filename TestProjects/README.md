@@ -4,7 +4,7 @@ This is an informational document about all the test projects contained in this 
 
 
 
-## List of test projects:
+## List of Test Projects:
 
 * Quadtree_Static_Particles
 * Quadtree_Moving_Particles

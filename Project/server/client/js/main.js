@@ -94,6 +94,14 @@ function run() {
 
 window.onload = function () {
     window.addEventListener('resize', resize, false);
+
+    window.addEventListener("load", function () {
+        window.scrollTo(0, 0);
+    });
+
+    document.addEventListener("touchmove", function (e) {
+        e.preventDefault()
+    });
     setup();
 }
 

@@ -9,7 +9,7 @@ var mouseY;
 var locationX = 100;
 var locationY = 100;
 
-var triangleAmount = 120;
+var triangleAmount = 4;
 
 window.onload = function () {
     window.addEventListener('resize', resize, false);
@@ -36,7 +36,7 @@ var loop = function () {
     setTimeout(function () {
         //do what you need here
         requestAnimationFrame(loop);
-    }, 100);
+    }, 10);
 
 }
 
@@ -150,9 +150,11 @@ document.onmousemove = function (event) {
 function getRandomRgb() {
     var num = Math.round(0xffffff * Math.random());
     var r = num >> 16;
-    var r = 0;
+    //r = 0;
     var g = num >> 8 & 255;
+    g = 0;
     var b = num & 255;
+    //b = 0;
     return 'rgb(' + r + ', ' + g + ', ' + b + ')';
 }
 

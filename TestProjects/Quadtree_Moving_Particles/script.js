@@ -8,9 +8,9 @@ var mouseY;
 
 var down = false;
 
-var particleCount = 1000;
+var particleCount = 500;
 var maxParticle = 0; //to make one size changeto zero and just use min size
-var minParticle = 4;
+var minParticle = 2;
 var maxParticleSize;
 var particles = [];
 
