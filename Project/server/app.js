@@ -5,8 +5,8 @@ var express = require('express');
 var fs = require('fs');
 
 //Load Config Data
-let rawdata = fs.readFileSync('./config.json');
-let c = JSON.parse(rawdata);
+var rawdata = fs.readFileSync('./config.json');
+var c = JSON.parse(rawdata);
 
 //Create Server Variables
 var app = express();
