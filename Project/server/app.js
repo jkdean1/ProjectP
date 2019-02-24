@@ -3,6 +3,7 @@ var Log = require('./js/log.js');
 var Util = require('./js/util.js');
 var express = require('express');
 var fs = require('fs');
+var Player = require('./js/player.js');
 
 //Load Config Data
 var rawdata = fs.readFileSync('./config.json');
@@ -26,6 +27,7 @@ serv.listen(gameport);
 Log("app", "Server Started", "info", true);
 
 var SOCKET_LIST = {};
+var PLAYER_LIST = [];
 
 var io = require('socket.io')(serv, {});
 io.sockets.on('connection', function (socket) {
