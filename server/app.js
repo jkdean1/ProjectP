@@ -38,8 +38,12 @@ io.sockets.on('connection', function (socket) {
 
     Log("app", "Socket Created: " + socket.id, "info", false);
 
+    var player = new Player(socket.id);
+    PLAYER_LIST[socket.id] = player;
+
     socket.on('disconnect', function () {
         Log("app", "Socket Deleted: " + socket.id, "info", false);
+        delete PLAYER_LIST[socket.id];
         delete SOCKET_LIST[socket.id];
     });
 });
