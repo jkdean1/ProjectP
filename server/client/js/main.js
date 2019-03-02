@@ -12,6 +12,10 @@ var height;
 //containers
 var players = [];
 
+//player variables
+var x;
+var y;
+
 socket.on('connected', function (data) {
 
     ID = data;
@@ -22,8 +26,13 @@ socket.on('connected', function (data) {
     }
 });
 
-socket.on('update', function (data) {
-    update(data);
+socket.on('message', function (data) {
+    console.log(data);
+});
+
+socket.on('updateLocation', function (data) {
+    x = data.x;
+    y = data.y;
 });
 
 function setup() {
@@ -32,22 +41,33 @@ function setup() {
     width = this.canvas.width = window.innerWidth;
     height = this.canvas.height = window.innerHeight;
 
+    x = width / 2;
+    y = height / 2;
+
     run();
 }
 
 function draw(dt) {
+    var canvasX = x - width / 2;
+    var canvasY = y - height / 2;
+    var moveX = 0 - canvasX;
+    var moveY = 0 - canvasY;
+
+    context.resetTransform();
     context.clearRect(0, 0, width, height);
 
-    for (var i = 0; i < players.length; i++) {
-        var p = players[i];
-        if (p.id == ID) {
-            context.fillStyle = "blue";
-            context.beginPath();
-            context.arc(width / 2, height / 2, p.r, 0, Math.PI * 2, true);
-            context.stroke();
-            context.fill();
-        }
-    }
+    context.translate(moveX, moveY);
+    context.fillStyle = "white";
+
+    context.fillStyle = "orange";
+    context.beginPath();
+    context.arc(x, y, 5, 0, Math.PI * 2);
+    context.closePath();
+    context.fill();
+    context.textAlign = 'center';
+    context.fillText('[ ' + x + ',' + y + ']', x, y - 10);
+
+    context.fillStyle = "black";
 }
 
 function update(data) {
@@ -110,6 +130,11 @@ function resize() {
     context = this.canvas.getContext('2d');
     width = this.canvas.width = window.innerHeight;
     height = this.canvas.height = window.innerHeight;
+
+    socket.emit('windowResized', {
+        w: width,
+        h: height
+    });
 }
 
 function timestamp() {
@@ -118,4 +143,60 @@ function timestamp() {
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+var onkeydown = function (event) {
+    if (event.keyCode === 68) //d
+        this.socket.emit('keyPress', {
+            inputId: 'right',
+            state: true
+        });
+    else if (event.keyCode === 83) //s
+        this.socket.emit('keyPress', {
+            inputId: 'down',
+            state: true
+        });
+    else if (event.keyCode === 65) //a
+        this.socket.emit('keyPress', {
+            inputId: 'left',
+            state: true
+        });
+    else if (event.keyCode === 87) // w
+        this.socket.emit('keyPress', {
+            inputId: 'up',
+            state: true
+        });
+    else if (event.keyCode === 32) // space
+        this.socket.emit('keyPress', {
+            inputId: 'space',
+            state: true
+        });
+}
+
+var onkeyup = function (event) {
+    if (event.keyCode === 68) //d
+        this.socket.emit('keyPress', {
+            inputId: 'right',
+            state: false
+        });
+    else if (event.keyCode === 83) //s
+        this.socket.emit('keyPress', {
+            inputId: 'down',
+            state: false
+        });
+    else if (event.keyCode === 65) //a
+        this.socket.emit('keyPress', {
+            inputId: 'left',
+            state: false
+        });
+    else if (event.keyCode === 87) // w
+        this.socket.emit('keyPress', {
+            inputId: 'up',
+            state: false
+        });
+    else if (event.keyCode === 32) // space
+        this.socket.emit('keyPress', {
+            inputId: 'space',
+            state: false
+        });
 }
