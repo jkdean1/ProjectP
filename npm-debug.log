@@ -5,8 +5,8 @@
 4 verbose config Skipping project config: /Users/jacobcox/.npmrc. (matches userconfig)
 5 verbose stack Error: ENOENT: no such file or directory, open '/Users/jacobcox/package.json'
 5 verbose stack     at Error (native)
-6 verbose cwd /Users/jacobcox/Documents/GitHub/ProjectP/Project
-7 error Darwin 18.2.0
+6 verbose cwd /Users/jacobcox/Documents/GitHub/ProjectP
+7 error Darwin 18.5.0
 8 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
 9 error node v6.11.0
 10 error npm  v3.10.10
